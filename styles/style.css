@@ -4,3 +4,46 @@
     box-sizing: border-box;
 }
 
+body {
+    font-size: 15px;
+    font-family: "Alata", sans-serif;
+}
+
+.header {
+    padding: 50px 80px;
+    color: hsl(0, 0%, 100%);
+    background-image: url("../images/desktop/image-hero.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__list {
+    display: flex;
+}
+
+.header__item {
+    margin-left: 30px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header__title {
+    max-width: 500px;
+    margin: 80px 0;
+    padding: 20px 30px;
+    font-size: 52px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: 2px solid hsl(0, 0%, 100%);
+}
+
+
