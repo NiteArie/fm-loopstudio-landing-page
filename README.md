@@ -1,5 +1,9 @@
 # fm-loopstudio-landing-page (Loopstudio Landing Page)
 
+## Live Preview
+
+Live URL: [https://nitearie.github.io/fm-loopstudio-landing-page/](https://nitearie.github.io/fm-loopstudio-landing-page/)
+
 ## Design Preview
 
 > Desktop
