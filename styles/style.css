@@ -187,10 +187,6 @@ body {
     gap: 20px;
 }
 
-.footer__logo {
-    /* width: 100%; */
-}
-
 .footer__list {
     display: flex;
 }
@@ -216,6 +212,7 @@ body {
 
 .footer__socials {
     display: flex;
+    align-items: center;
 }
 
 .footer__social {
