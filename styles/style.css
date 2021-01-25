@@ -11,7 +11,7 @@ body {
 }
 
 .header {
-    padding: 80px 120px;
+    padding: 50px 120px 80px;
     color: hsl(0, 0%, 100%);
     background-image: url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
@@ -35,7 +35,25 @@ body {
 .header__link {
     text-decoration: none;
     color: inherit;
+    position: relative;
 }
+
+.header__link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background-color: white;
+    transition: all 200ms ease-out;
+}
+
+.header__item:hover .header__link::after {
+    left: 25%;
+    right: 25%;
+}
+
 
 .header__title {
     max-width: 500px;
@@ -111,6 +129,13 @@ body {
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 2px;
+    cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.creation__button:hover {
+    background-color:hsl(0, 0%, 0%);
+    color: hsl(0, 0%, 100%);
 }
 
 .creation__items {
@@ -121,11 +146,26 @@ body {
 }
 
 .creation__item {
+    position: relative;
     height: 450px;
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
+}
+
+.creation__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: all 200ms ease-out;
+}
+
+.creation__item:hover .creation__overlay {
+    background-color: hsla(0, 0%, 100%, .6);
 }
 
 .creation__name {
@@ -135,7 +175,12 @@ body {
     font-size: 28px;
     font-family: "Josefin Sans", sans-serif;
     text-transform: uppercase;
-    background-color: hsla(0, 0%, 0%, 0.2);
+    transition: color 200ms ease-out;
+}
+
+.creation__item:hover .creation__name {
+    color: hsla(0, 0%, 0%, 1);
+    z-index: 1;
 }
 
 
@@ -196,9 +241,26 @@ body {
 }
 
 .footer__link {
+    position: relative;
     color: hsl(0, 0%, 100%);
     text-decoration: none;
     cursor: pointer;
+}
+
+.footer__link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background-color: white;
+    transition: all 200ms ease-out;
+}
+
+.footer__item:hover .footer__link::after {
+    left: 25%;
+    right: 25%;
 }
 
 .footer__right {
@@ -217,6 +279,26 @@ body {
 
 .footer__social {
     margin-left: 15px;
+}
+
+.footer__link {
+    position: relative;
+}
+
+.footer__link::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    right: 50%;
+    height: 2px;
+    background-color: white;
+    transition: all 200ms ease-out;
+}
+
+.footer__social:hover .footer__link::after {
+    left: 0%;
+    right: 0%;
 }
 
 .footer__copyright {
