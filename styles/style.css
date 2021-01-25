@@ -274,7 +274,6 @@ body {
 
 .footer__socials {
     display: flex;
-    align-items: center;
 }
 
 .footer__social {
@@ -299,8 +298,147 @@ body {
 .footer__social:hover .footer__link::after {
     left: 0%;
     right: 0%;
+    opacity: 1;
 }
 
 .footer__copyright {
     color: hsl(0, 0%, 41%);
+}
+
+@media only screen and (max-width: 1270px) {
+    .leader__interactive {
+        max-width: 500px;
+    }
+    
+    .leader__info {
+        padding: 40px;
+        padding-bottom: 20px;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .leader {
+        grid-template-columns: 1fr;
+    }
+
+    .leader__interactive {
+        max-width: 800px;
+        width: 100%;
+        background-size: cover;
+    }
+
+    .leader__info {
+        width: 100%;
+        position: static;   
+        text-align: center;
+    }
+
+    .creation__items {
+        grid-template-columns: 1fr;
+    }
+
+    .creation__item {
+        background-size: cover;
+        width: 100%;
+        height: 150px;
+    }
+    
+    .creation__item--earth {
+        background-image: url("../images/mobile/image-deep-earth.jpg");
+    }
+
+    .creation__item--arcade {
+        background-image: url("../images/mobile/image-night-arcade.jpg");
+    }
+
+    .creation__item--soccer {
+        background-image: url("../images/mobile/image-soccer-team.jpg");
+    }
+
+    .creation__item--grid {
+        background-image: url("../images/mobile/image-grid.jpg");
+    }
+
+    .creation__item--above {
+        background-image: url("../images/mobile/image-from-above.jpg");
+    }
+
+    .creation__item--borealis {
+        background-image: url("../images/mobile/image-pocket-borealis.jpg");
+    }
+
+    .creation__item--curiosity {
+        background-image: url("../images/mobile/image-curiosity.jpg");
+    }
+
+    .creation__item--fisheye {
+        background-image: url("../images/mobile/image-fisheye.jpg");
+    }
+
+    .footer {
+        display: block;
+    }
+
+    .footer__left {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__list {
+        flex-direction: column;
+    }
+
+    .footer__item {
+        margin-top: 20px;
+        margin-right: 0;
+    }
+
+    .footer__right {
+        margin-top: 30px;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .footer__social {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .header {
+        padding: 20px;
+        background-image: url("../images/mobile/image-hero.jpg");
+        background-size: 100%;
+    }
+
+    .header__list {
+        display: none;
+    }
+
+    .leader {
+        padding: 20px;
+    }
+
+    .leader__interactive {
+        height: 300px;
+    }
+
+    .creation {
+        padding: 20px;
+    }
+
+    .creation__info {
+        flex-direction: column;
+    }
+
+    .creation__button {
+        margin-top: 30px;
+        padding: 10px 50px;
+    }
+
+    .footer {
+        padding: 20px;
+    }
 }
